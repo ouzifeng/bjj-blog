@@ -1,6 +1,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    font-size: 16px;
+
 }
 
 header {
@@ -10,11 +12,11 @@ header {
 .full-width-container {
     width: 100%;
     background-color: #f7f7f7;
-    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
 }
 
 .header-container {
-    max-width: 1280px;
+    max-width: 1170px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -25,14 +27,146 @@ header {
     margin-right: 20px;
 }
 
+@media screen and (max-width: 480px) {
+    .logo img {
+        height: 50px;
+        margin: 10px
+    }
+}
+
 .nav {
     margin-left: 20px;
 }
 
 li a {
-    color: black;
+    color: #343a40;
 }
 
 li a:hover {
     color: rgb(233, 114, 3);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 460px) {
+    .nav-menu {
+        display: none;
+    }
+}
+
+.header-h1 {
+    text-align: left;
+    font-style: italic;
+    margin-left: 40px;
+    margin-top: 40px
+}
+
+.header-h1 h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    color: white;
+}
+
+.first-container {
+    width: 100%;
+    background-color: #343a40;
+    margin-bottom: 40px;
+}
+
+.header-p {
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 40px
+}
+
+.header-p {
+    font-weight: 300;
+    font-size: 2rem;
+    color: white;
+}
+
+.button-header {
+    margin-left: 40px;
+    margin-top: 20px
+}
+
+.button-header .btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.btn:hover {
+    background-color: #343a40;
+    color: white;
+}
+
+.button-header .btn:hover {
+    background-color: #343a40;
+    color: white;
+    border: 1px solid white;
+}
+
+hr.side-bar-hr {
+    border-top: 1px solid #343a40;
+    margin: 20px 0
+}
+
+p.blog-meta {
+    font-size: 1.3rem;
+}
+
+p.blog-meta span {
+    font-style: italic;
+    color: #343a40;
+}
+
+p.blog-intro {
+    margin-top: 20px;
+}
+
+.btn-blog {
+    background-color: #343a40;
+    color: white;
+    font-size: large;
+}
+
+.btn-blog:hover {
+    background-color: white;
+    color: #343a40;
+    border: 1px solid #343a40;
+}
+
+.blog-post {
+    margin-bottom: 20px;
+}
+
+.blog-post a {
+    color: #343a40;
+}
+
+.blog-post a:hover {
+    color: #343a40;
+    text-decoration: none;
+}
+
+.blog-post-mini h2 {
+    font-size: 2rem;
+}
+
+.blog-post-mini a {
+    color: #343a40;
+}
+
+.blog-post-mini a:hover {
+    color: #343a40;
+    text-decoration: none;
+}
+
+.blog-post-mini img {
+    width: 100%;
+    height: 220px
 }
