@@ -51,11 +51,59 @@ li a:hover {
     align-items: center;
 }
 
-@media screen and (max-width: 460px) {
+.mobile-nav {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
     .nav-menu {
         display: none;
     }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-right: 20px;
+    }
 }
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    background-color: #333;
+    height: 3px;
+    width: 100%;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
 
 .header-h1 {
     text-align: left;
@@ -71,9 +119,44 @@ li a:hover {
 }
 
 .first-container {
-    width: 100%;
     background-color: #343a40;
-    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 480px) {
+    .first-container {
+        background-color: #343a40;
+        margin-top: -20px;
+    }
+
+    .header-h1 {
+        margin: 10px !important;
+        text-align: center;
+    }
+
+    .header-p {
+        margin: 10px !important;
+        text-align: center;
+    }
+
+    .first-container h1 {
+        font-size: 2rem;
+    }
+
+    .first-container p {
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+
+    .first-container .button-header {
+        margin-bottom: 15px;
+        margin-left: 20px
+    }
+
+    .first-container .button-header .btn {
+        font-size: 1.5rem;
+        padding: 5px 10px;
+    }
+
 }
 
 .header-p {
@@ -124,8 +207,14 @@ p.blog-meta span {
     color: #343a40;
 }
 
-p.blog-intro {
+h3.blog-intro {
     margin-top: 20px;
+    font-size: 1.6rem;
+}
+
+h3.blog-intro-header {
+    margin-top: 20px;
+    font-size: 1.6rem;
 }
 
 .btn-blog {
@@ -143,6 +232,19 @@ p.blog-intro {
 .blog-post {
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 480px) {
+
+    .blog-post h2 {
+        font-size: 2rem;
+    }
+
+    .btn-blog {
+        font-size: 1.5rem;
+    }
+
+}
+
 
 .blog-post a {
     color: #343a40;
