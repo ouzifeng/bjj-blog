@@ -259,7 +259,8 @@ h3.blog-intro-header {
 }
 
 .blog-post-mini h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
 .blog-post-mini a {
@@ -371,4 +372,8 @@ footer {
 #subscribe {
     margin-left: 40px;
     margin-right: 40px;
+}
+
+.cost-gyms li {
+    margin-bottom: 20px;
 }
