@@ -222,13 +222,13 @@ h3.blog-intro-header {
 
 .btn-blog {
     background-color: #343a40;
-    color: white;
+    color: white !important;
     font-size: large;
 }
 
 .btn-blog:hover {
     background-color: white;
-    color: #343a40;
+    color: #343a40 !important;
     border: 1px solid #343a40;
 }
 
@@ -376,4 +376,12 @@ footer {
 
 .cost-gyms li {
     margin-bottom: 20px;
+}
+
+.button-header .btn-light {
+    background-color: #f7f7f7;
+}
+
+.button-header a {
+    color: #343a40;
 }
