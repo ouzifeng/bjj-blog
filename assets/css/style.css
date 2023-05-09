@@ -5,6 +5,11 @@ body {
 
 }
 
+body h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header {
     width: 100%;
 }
@@ -117,7 +122,7 @@ li a:hover {
 
 .header-h1 h1 {
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: white;
 }
 
@@ -384,4 +389,10 @@ footer {
 
 .button-header a {
     color: #343a40;
+}
+
+@media screen and (min-width: 480px) {
+    .hero-image {
+        display: none;
+    }
 }
