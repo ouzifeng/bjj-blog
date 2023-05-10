@@ -25,71 +25,61 @@
 </head>
 
 <body>
-
-    <header>
-        <div class="full-width-container">
-            <div class="full-width-container">
-                <nav class="navbar navbar-default" id="bootsrap-nav-bar">
-                    <div class="container-fluid">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="index.html">
-                                <img alt="Brand" src="assets/images/bjj-logo.webp">
-                            </a>
-                        </div>
-
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <form class="navbar-form navbar-right">
-                                    <input class="form-control" type="search" placeholder="Search" aria-label="Search"
-                                        id="nav-search">
-                                    <button type="button" class="btn btn-secondary" data-toggle="modal"
-                                        data-target="#searchmodal">Search</button>
-                                </form>
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                        aria-haspopup="true" aria-expanded="false">Articles <span
-                                            class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="introduction-bjj.html">An Introduction to Brazilian
-                                                Jiu-Jitsu</a></li>
-                                        <li><a href="self-defense.html">Can BJJ be Used for Self-Defense?</a></li>
-                                        <li><a href="prepping-first-day.html">Preparing for Your First BJJ
-                                                Class: A Guide To What To Expect</a></li>
-                                        <li><a href="experience.html">How Much Experience Do I Need to Start
-                                                Training
-                                                BJJ?</a></li>
-                                        <li><a href="competing.html">Competing in BJJ Tournaments: Tips for
-                                                Success</a></li>
-                                        <li><a href="cost.html">Understanding the Cost of BJJ Training in the
-                                                UK</a></li>
-                                        <li><a href="right-school.html">Choosing the Right BJJ School: 10 Key
-                                                Factors to
-                                                Consider</a></li>
-                                        <li><a href="history-evolution.html">The History and Evolution of BJJ
-                                                Across the World</a></li>
-
-
-
-                                    </ul>
-                                </li>
+    <!-- Start Nav Bar -->
+    <div class="full-width-container">
+        <nav class="navbar navbar-default" id="bootsrap-nav-bar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img alt="Brand" src="assets/images/bjj-logo.webp">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <form class="navbar-form navbar-right">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search"
+                            id="nav-search">
+                        <button type="button" class="btn btn-secondary" data-toggle="modal"
+                            data-target="#searchmodal">Search</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Articles <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="introduction-bjj.html">An Introduction to Brazilian
+                                        Jiu-Jitsu</a></li>
+                                <li><a href="self-defense.html">Can BJJ be Used for Self-Defense?</a></li>
+                                <li><a href="prepping-first-day.html">Preparing for Your First BJJ
+                                        Class: A Guide To What To Expect</a></li>
+                                <li><a href="experience.html">How Much Experience Do I Need to Start
+                                        Training
+                                        BJJ?</a></li>
+                                <li><a href="competing.html">Competing in BJJ Tournaments: Tips for
+                                        Success</a></li>
+                                <li><a href="cost.html">Understanding the Cost of BJJ Training in the
+                                        UK</a></li>
+                                <li><a href="right-school.html">Choosing the Right BJJ School: 10 Key
+                                        Factors to
+                                        Consider</a></li>
+                                <li><a href="history-evolution.html">The History and Evolution of BJJ
+                                        Across the World</a></li>
                             </ul>
+                        </li>
+                    </ul>
 
-                        </div><!-- /.navbar-collapse -->
-                    </div><!-- /.container-fluid -->
-                </nav>
+                </div>
             </div>
-        </div>
-    </header>
+        </nav>
+    </div>
+    <!-- End Nav Bar -->
 
     <!-- Search Modal -->
     <div class="modal fade" id="searchmodal" tabindex="-1" role="dialog" aria-labelledby="searchmodal"
@@ -109,13 +99,13 @@
             </div>
         </div>
     </div>
+    <!-- End Search Modal -->
 
-    <!-- Article-->
+    <!-- Start Article-->
     <div class="container">
         <div class="row">
             <h1 id="more-articles">How Much Experience Do I Need to Start Training BJJ?</h1>
             <hr>
-
             <div class="col-md-8">
                 <div class="blog-post">
                     <article>
@@ -161,49 +151,32 @@
                         <p>Your first BJJ class will likely be focused on learning the basics of the sport,
                             including:</p>
                         <ul>
-
-                            <li>Breakfall techniques to safely fall to the ground
-                            </li>
-                            <li>Basic positions, such as closed guard, half guard, and side control
-                            </li>
-                            <li>Simple submissions, such as the armbar and triangle choke
-                            </li>
-                            <li>Drilling techniques with a partner to improve your mechanics and muscle memory
-                            </li>
+                            <li>Breakfall techniques to safely fall to the ground</li>
+                            <li>Basic positions, such as closed guard, half guard, and side control</li>
+                            <li>Simple submissions, such as the armbar and triangle choke</li>
+                            <li>Drilling techniques with a partner to improve your mechanics and muscle memory</li>
                         </ul>
                         <p>You can expect your first class to be both physically and mentally challenging, but also
                             rewarding. Your instructor and training partners will be supportive and help you learn at
                             your own pace.</p>
-
-
                         <h2>What should I bring to my first BJJ class?</h2>
-                        <p>For your first BJJ class, you should bring:
-                        </p>
+                        <p>For your first BJJ class, you should bring:</p>
                         <ul>
-                            <li>
-                                Comfortable workout clothes, such as a t-shirt and shorts or a rashguard and spats
-
-
-                            </li>
-                            <li>A water bottle
-                            </li>
+                            <li>Comfortable workout clothes, such as a t-shirt and shorts or a rashguard and spats</li>
+                            <li>A water bottle</li>
                             <li>A positive attitude and a willingness to learn</li>
                         </ul>
                         <p>Most BJJ academies provide training mats, so there is no need to bring your own.</p>
-                        <h2>How much does BJJ training cost?
-                        </h2>
+                        <h2>How much does BJJ training cost?</h2>
                         <p>The cost of BJJ training varies depending on where you live and the type of gym or academy
                             you train at. On average, you can expect to pay between £70 and £100 per month for unlimited
                             BJJ training. Some gyms may offer discounts for signing up for multiple months or for
                             bringing a friend. Additionally, many academies offer introductory classes or trial periods,
-                            allowing you to try BJJ before committing to a membership.
-
-                        </p>
+                            allowing you to try BJJ before committing to a membership.</p>
                     </div>
                 </div>
-
             </div>
-
+            <!-- End Article-->
 
             <!-- Start Sidebar -->
             <aside class="col-md-4 home-sidebar">
@@ -212,7 +185,7 @@
                     latest articles that will help answer all your questions!</p>
                 <button type="button" class="btn btn-secondary" data-toggle="modal"
                     data-target="#subscribe-modal">Subscribe</button>
-                <!-- Subscribe Modal -->
+                <!-- Start Subscribe Modal -->
                 <div class="modal fade" id="subscribe-modal" tabindex="-1" role="dialog"
                     aria-labelledby="subscribe-modal" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -240,9 +213,8 @@
                         </div>
                     </div>
                 </div>
+                <!-- End Subscribe Modal -->
                 <hr class="side-bar-hr">
-
-
                 <h3 class="side-bar">Popular Articles</h3>
                 <ol class="list-side-bar">
                     <li><a href="introduction-bjj.html">An Introduction to Brazilian
@@ -253,34 +225,29 @@
                     <li><a href="experience.html">How Much Experience Do I Need to Start Training BJJ?</a></li>
                     <li><a href="competing.html">Competing in BJJ Tournaments: Tips for Success</a></li>
                     <li><a href="cost.html">Understanding the Cost of BJJ Training in the UK</a></li>
-                    <li><a href="right-school.html">Choosing the Right BJJ School: 10 Key Factors to Consider</a></li>
+                    <li><a href="right-school.html">Choosing the Right BJJ School: 10 Key Factors to Consider</a>
+                    </li>
                     <li><a href="history-evolution.html">The History and Evolution of BJJ Across the World</a></li>
                 </ol>
-
                 <hr class="side-bar-hr">
-
                 <h3 class="font-italic">Elsewhere</h3>
                 <ol class="list-unstyled">
                     <li><a href=""><i class="fa fa-instagram fa-fw"></i>Instagram</a></li>
                     <li><a href=""><i class="fa fa-facebook fa-fw"></i>Facebook</a></li>
                     <li><a href=""><i class="fa fa-youtube fa-fw"></i>Youtube</a></li>
-
-
                 </ol>
-
             </aside>
-
+            <!-- End Sidebar -->
         </div>
     </div>
 
     <!-- Start Footer -->
-
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <div class="logo">
-                        <img src="assets/images/bjj-logo.png" alt="Your Logo">
+                        <img src="assets/images/bjj-logo.png" alt="BJJ Logo">
                     </div>
                 </div>
                 <div class="col-md-8 footer-links">
@@ -292,11 +259,11 @@
                                 <li><a href="self-defense.html">Can BJJ be Used for Self-Defense?</a></li>
                                 <li><a href="prepping-first-day.html">
                                         Preparing for Your First BJJ Class: A Guide To What To Expect</a></li>
-                                <li><a href="experience.html">How Much Experience Do I Need to Start Training BJJ?</a>
+                                <li><a href="experience.html">How Much Experience Do I Need to Start Training
+                                        BJJ?</a>
                                 </li>
                             </ul>
                         </div>
-
                         <div class="col-md-4">
                             <h4>About</h4>
                             <ul class="list-unstyled">
@@ -307,11 +274,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
         </div>
         <div class="footer-full-width-container">
             <div class="footer-container">
@@ -319,7 +281,6 @@
             </div>
         </div>
     </footer>
-
     <!-- End Footer -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -330,12 +291,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
         integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
         crossorigin="anonymous"></script>
-
-
     <script>var maxLength = 100;
-
         var paragraphs = document.getElementsByClassName("blog-intro");
-
         for (var i = 0; i < paragraphs.length; i++) {
             var text = paragraphs[i].textContent;
             if (text.length > maxLength) {
@@ -344,15 +301,12 @@
             }
         }
     </script>
-
     <script>
         document.querySelector('.hamburger').addEventListener('click', function () {
             const mobileNav = document.querySelector('.mobile-nav');
             mobileNav.style.display = mobileNav.style.display === 'block' ? 'none' : 'block';
         });
-
     </script>
-
 </body>
 
 </html>
